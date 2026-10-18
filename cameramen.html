@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cameramen | LensHire</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html"><i class="fa-solid fa-camera"></i> LensHire</a>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="cameramen.html">Cameramen</a>
+      <a href="services.html">Services</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html">Contact</a>
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+    <a class="btn btn-small" href="login.html">Login</a>
+  </header>
+
+
+<section class="page-head">
+  <span class="eyebrow dark">FIND YOUR PROFESSIONAL</span>
+  <h1>Browse Cameramen</h1>
+  <p>Compare categories, locations, ratings and starting prices before sending a booking request.</p>
+</section>
+<div class="filters">
+  <input class="input" id="filterSearch" placeholder="Search name, service or location" oninput="applyFilters()">
+  <select id="filterCategory" onchange="applyFilters()">
+    <option value="">All Categories</option>
+    <option>Wedding</option><option>Drone</option><option>Event</option><option>YouTube</option><option>Pre Wedding</option>
+  </select>
+  <select id="maxPrice" onchange="applyFilters()">
+    <option value="999999">Any Price</option>
+    <option value="4000">Up to ₹4,000</option>
+    <option value="6000">Up to ₹6,000</option>
+    <option value="8000">Up to ₹8,000</option>
+  </select>
+  <a class="btn" href="booking.html">Book Now</a>
+</div>
+<section class="section"><div id="allCards" class="cards-grid"></div></section>
+
+  <footer>
+    <div class="footer-main">
+      <div>
+        <a class="logo" href="index.html"><i class="fa-solid fa-camera"></i> LensHire</a>
+        <p>Hire trusted professional cameramen for weddings, events, reels, YouTube and cinematic shoots.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="cameramen.html">Cameramen</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Booking</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Account</h4>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="social">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">© 2026 LensHire. All rights reserved.</div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

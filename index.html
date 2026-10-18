@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | LensHire</title>
+
+ <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <a class="logo" href="index.html">
+    <i class="fa-solid fa-camera"></i> LensHire
+  </a>
+
+  <button class="menu-toggle" onclick="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <nav id="mainNav">
+    <a href="index.html">Home</a>
+    <a href="cameramen.html">Cameramen</a>
+    <a href="services.html">Services</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+
+  <a class="btn btn-small" href="login.html">Login</a>
+</header>
+
+
+<section class="hero">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <span class="eyebrow">PROFESSIONAL VISUAL TALENT</span>
+
+    <h1>
+      Hire the right <span>cameraman</span> for your story.
+    </h1>
+
+    <p>
+      Find photographers, videographers and drone professionals for
+      weddings, events, YouTube, reels and cinematic projects.
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn btn-light" href="cameramen.html">
+        Explore Cameramen
+      </a>
+
+      <a class="btn btn-outline" href="booking.html">
+        Book a Shoot
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<div class="search-wrap">
+  <div class="search-box">
+
+    <div class="search-field">
+      <i class="fa-solid fa-magnifying-glass"></i>
+
+      <input
+        id="homeSearch"
+        placeholder="Search cameraman, service or city"
+        oninput="filterHomeCards()">
+    </div>
+
+    <select id="homeCategory" onchange="filterHomeCards()">
+      <option value="">All Services</option>
+      <option>Wedding</option>
+      <option>Drone</option>
+      <option>Event</option>
+      <option>YouTube</option>
+      <option>Pre Wedding</option>
+    </select>
+
+    <a class="btn" href="cameramen.html">Search</a>
+
+  </div>
+</div>
+
+
+<section class="section">
+
+  <div class="section-head">
+    <div>
+      <span class="eyebrow dark">POPULAR SERVICES</span>
+      <h2>Visual coverage for every occasion.</h2>
+    </div>
+
+    <a class="text-link" href="services.html">
+      View all services →
+    </a>
+  </div>
+
+  <div class="service-grid">
+
+    <div class="service-card">
+      <i class="fa-solid fa-ring"></i>
+      <h3>Wedding</h3>
+      <p>Candid, traditional and cinematic wedding coverage.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa-solid fa-helicopter"></i>
+      <h3>Drone</h3>
+      <p>Aerial visuals for events, weddings and brands.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa-solid fa-calendar-days"></i>
+      <h3>Events</h3>
+      <p>Professional coverage for parties and corporate events.</p>
+    </div>
+
+    <div class="service-card">
+      <i class="fa-brands fa-youtube"></i>
+      <h3>YouTube & Reels</h3>
+      <p>Creator-focused video and social content production.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section soft">
+
+  <div class="section-head">
+    <div>
+      <span class="eyebrow dark">FEATURED PROFESSIONALS</span>
+      <h2>Meet some of our cameramen.</h2>
+    </div>
+
+    <a class="text-link" href="cameramen.html">
+      Browse all →
+    </a>
+  </div>
+
+  <div id="homeCards" class="cards-grid"></div>
+
+</section>
+
+
+<section class="section">
+
+  <div class="section-head center">
+    <div>
+      <span class="eyebrow dark">HOW IT WORKS</span>
+      <h2>Book in four simple steps.</h2>
+    </div>
+  </div>
+
+  <div class="steps">
+
+    <div>
+      <span>01</span>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <h3>Search</h3>
+      <p>Choose your service and location.</p>
+    </div>
+
+    <div>
+      <span>02</span>
+      <i class="fa-solid fa-user-check"></i>
+      <h3>Compare</h3>
+      <p>Check profiles, prices and ratings.</p>
+    </div>
+
+    <div>
+      <span>03</span>
+      <i class="fa-solid fa-calendar-check"></i>
+      <h3>Request</h3>
+      <p>Share your date and requirements.</p>
+    </div>
+
+    <div>
+      <span>04</span>
+      <i class="fa-solid fa-camera"></i>
+      <h3>Shoot</h3>
+      <p>Work with your selected professional.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section dark-section">
+
+  <div class="section-head">
+    <div>
+      <span class="eyebrow">WHY LENSHIRE</span>
+      <h2>Built around simple, professional booking.</h2>
+    </div>
+  </div>
+
+  <div class="feature-grid">
+
+    <div>
+      <i class="fa-solid fa-user-shield"></i>
+      <h3>Professional Profiles</h3>
+      <p>Review services, experience and portfolio details.</p>
+    </div>
+
+    <div>
+      <i class="fa-solid fa-sliders"></i>
+      <h3>Easy Search</h3>
+      <p>Filter by category, location and starting price.</p>
+    </div>
+
+    <div>
+      <i class="fa-solid fa-calendar-days"></i>
+      <h3>Simple Booking</h3>
+      <p>Send your event details through one clear form.</p>
+    </div>
+
+    <div>
+      <i class="fa-solid fa-message"></i>
+      <h3>Direct Contact</h3>
+      <p>Connect with professionals through available contact options.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section">
+
+  <div class="section-head center">
+    <div>
+      <span class="eyebrow dark">CUSTOMER REVIEWS</span>
+      <h2>What customers say.</h2>
+    </div>
+  </div>
+
+  <div class="review-grid">
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>
+        “The booking flow was simple and the profile information made it
+        easy to understand the service.”
+      </p>
+      <strong>— Ananya</strong>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>
+        “I could quickly compare different categories and starting prices
+        for my event.”
+      </p>
+      <strong>— Rohit</strong>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p>
+        “The portfolio section helped me understand the photographer’s
+        style before requesting a shoot.”
+      </p>
+      <strong>— Neha</strong>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="cta">
+
+  <div>
+    <span class="eyebrow">READY TO CREATE?</span>
+    <h2>Find your visual professional.</h2>
+    <p>Browse profiles and send a booking request today.</p>
+  </div>
+
+  <a class="btn btn-light" href="cameramen.html">
+    Explore Cameramen
+  </a>
+
+</section>
+
+
+<footer>
+
+  <div class="footer-main">
+
+    <div>
+      <a class="logo" href="index.html">
+        <i class="fa-solid fa-camera"></i> LensHire
+      </a>
+
+      <p>
+        Hire trusted professional cameramen for weddings, events,
+        reels, YouTube and cinematic shoots.
+      </p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <a href="cameramen.html">Cameramen</a>
+      <a href="services.html">Services</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div>
+      <h4>Account</h4>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+      <a href="dashboard.html">Dashboard</a>
+    </div>
+
+    <div>
+      <h4>Follow</h4>
+
+      <div class="social">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 LensHire. 
+  </div>
+
+</footer>
+
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
