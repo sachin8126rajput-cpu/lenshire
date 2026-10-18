@@ -14,9 +14,9 @@
 - `contact.html`: Demo contact form
 - `login.html`, `register.html`: Demo account pages
 - `dashboard.html`: Demo booking dashboard
-- `css/style.css`: Shared styles for all pages, grouped with section comments
-- `js/data.js`: Six sample cameraman profiles used by the frontend
-- `js/script.js`: Search, filtering, profiles, booking and dashboard behavior
+- `style.css`: Shared styles for all pages, grouped with section comments
+- `data.js`: Six sample cameraman profiles used by the frontend
+- `script.js`: Search, filtering, profiles, booking and dashboard behavior
 
 ## Important
 This is the connected **frontend demo** from the uploaded files. Login, registration and booking data use browser `localStorage`; this ZIP is not yet connected to Flask/MySQL. Six sample profiles are retained because the cards, search, profile and booking demo use them.
