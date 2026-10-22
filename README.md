@@ -1,9 +1,4 @@
-# LensHire Connected Frontend
 
-## Run
-1. Extract the ZIP.
-2. Open the `LensHire_Connected` folder in VS Code.
-3. Open `index.html` using Live Server (recommended), or open it directly in a browser.
 
 ## Project structure
 - `index.html`: Home page
